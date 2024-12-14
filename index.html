@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>pat's candle :3</title>
+    <link rel="shortcut icon" href="images/gift.png" type="image/x-icon">
+    <link rel="stylesheet" href="style-candle.css">
+    <script src="main-candle.js"></script>
+</head>
+<body>
+    <h1>
+        Haiii baby make a wish :3 then blow the Candle
+    </h1>
+    <div class="glow" id="glow"></div>
+
+    <div id="candle">
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div id="top">
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div class="smoke"></div>
+            <div id="knot"></div>
+            <div class="burn" id="flame"></div>
+        </div>
+    </div>
+
+    <!-- Button -->
+    <button class="center-button" id="navigateButton" style="display: none;" onclick="goToFlower()">i have sumthing 4 u</button>
+
+    <script src="main-candle.js"></script>
+
+    <script>
+
+        document.getElementById("flame").onclick = function () {
+
+            document.getElementById("navigateButton").style.display = "block";
+        };
+
+        function goToFlower() {
+            window.location.href = 'flower-index.html';
+        }
+
+    </script>
+</body>
+</html>
+
